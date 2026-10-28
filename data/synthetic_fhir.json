@@ -1,0 +1,44 @@
+{
+  "patients": [
+    {
+      "resource_type": "Patient",
+      "id": "SYN-P001",
+      "name": {"given": "Avery", "family": "Morgan"},
+      "birth_date": "1988-04-12",
+      "administrative_gender": "female",
+      "city": "Exampleville",
+      "active": true
+    },
+    {
+      "resource_type": "Patient",
+      "id": "SYN-P002",
+      "name": {"given": "Jordan", "family": "Lee"},
+      "birth_date": "1975-09-03",
+      "administrative_gender": "male",
+      "city": "Demo City",
+      "active": true
+    },
+    {
+      "resource_type": "Patient",
+      "id": "SYN-P003",
+      "name": {"given": "Riley", "family": "Patel"},
+      "birth_date": "2001-01-22",
+      "administrative_gender": "nonbinary",
+      "city": "Exampleville",
+      "active": true
+    }
+  ],
+  "observations": [
+    {"resource_type": "Observation", "id": "SYN-O001", "patient_id": "SYN-P001", "code": "heart-rate", "display": "Heart rate", "value": "72 beats/min", "effective_date": "2026-09-18"},
+    {"resource_type": "Observation", "id": "SYN-O002", "patient_id": "SYN-P001", "code": "blood-pressure", "display": "Blood pressure", "value": "118/76 mmHg", "effective_date": "2026-09-18"},
+    {"resource_type": "Observation", "id": "SYN-O003", "patient_id": "SYN-P002", "code": "heart-rate", "display": "Heart rate", "value": "68 beats/min", "effective_date": "2026-08-07"},
+    {"resource_type": "Observation", "id": "SYN-O004", "patient_id": "SYN-P003", "code": "temperature", "display": "Body temperature", "value": "36.8 C", "effective_date": "2026-10-02"}
+  ],
+  "encounters": [
+    {"resource_type": "Encounter", "id": "SYN-E001", "patient_id": "SYN-P001", "encounter_type": "outpatient", "status": "finished", "date": "2026-09-18", "department": "Primary Care"},
+    {"resource_type": "Encounter", "id": "SYN-E002", "patient_id": "SYN-P001", "encounter_type": "telehealth", "status": "finished", "date": "2026-06-11", "department": "Care Coordination"},
+    {"resource_type": "Encounter", "id": "SYN-E003", "patient_id": "SYN-P002", "encounter_type": "outpatient", "status": "finished", "date": "2026-08-07", "department": "Cardiology"},
+    {"resource_type": "Encounter", "id": "SYN-E004", "patient_id": "SYN-P003", "encounter_type": "outpatient", "status": "finished", "date": "2026-10-02", "department": "Primary Care"}
+  ]
+}
+

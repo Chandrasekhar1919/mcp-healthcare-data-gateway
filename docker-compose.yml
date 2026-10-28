@@ -1,0 +1,14 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MCP_TRANSPORT: streamable-http
+      AUDIT_DATABASE_PATH: /app/data/audit.db
+    volumes:
+      - audit-data:/app/data
+
+volumes:
+  audit-data:
+
